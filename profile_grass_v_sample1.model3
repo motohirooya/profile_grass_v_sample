@@ -71,6 +71,131 @@
         </Option>
       </Option>
     </Option>
+    <Option name="gdal:cliprasterbymasklayer_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="gdal:cliprasterbymasklayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1321" type="double"/>
+        <Option name="component_pos_y" value="731" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="マスクレイヤで切り抜く　ライン沿いのdem" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1130" type="double"/>
+      <Option name="component_pos_y" value="805" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="gdal:cliprasterbymasklayer_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALPHA_BAND" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="CROP_TO_CUTLINE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="EXTRA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="DEM" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="KEEP_RESOLUTION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="MASK" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:reprojectlayer_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MULTITHREADING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SET_RESOLUTION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="SOURCE_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_EXTENT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="X_RESOLUTION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="Y_RESOLUTION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="gdal:fillnodata_1" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
@@ -80,16 +205,16 @@
         <Option name="color" value="" type="QString"/>
         <Option name="component_description" value="ラスタの端部の内挿補完をするため、nodataを埋めておく" type="QString"/>
         <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="873" type="double"/>
-        <Option name="component_pos_y" value="1113" type="double"/>
+        <Option name="component_pos_x" value="816" type="double"/>
+        <Option name="component_pos_y" value="991" type="double"/>
         <Option name="component_width" value="100" type="double"/>
         <Option name="outputs_collapsed" value="true" type="bool"/>
         <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
       <Option name="component_description" value="nodata値を内挿値で埋める" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="681" type="double"/>
-      <Option name="component_pos_y" value="1153.5" type="double"/>
+      <Option name="component_pos_x" value="624" type="double"/>
+      <Option name="component_pos_y" value="1031.5" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="gdal:fillnodata_1" type="QString"/>
@@ -381,6 +506,83 @@
         </Option>
       </Option>
     </Option>
+    <Option name="native:buffer_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:buffer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1214" type="double"/>
+        <Option name="component_pos_y" value="642" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="バッファ（buffer）ライン沿い" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1126" type="double"/>
+      <Option name="component_pos_y" value="653" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:buffer_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DISSOLVE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="DISTANCE" type="List">
+          <Option type="Map">
+            <Option name="expression" value=" @ラインcrs1px_OUTPUT_maxx - @ラインcrs1px_OUTPUT_minx " type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="END_CAP_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractvertices_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="JOIN_STYLE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="MITER_LIMIT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="2" type="double"/>
+          </Option>
+        </Option>
+        <Option name="SEGMENTS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SEPARATE_DISJOINT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:deletecolumn_1" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
@@ -442,8 +644,8 @@
       </Option>
       <Option name="component_description" value="間隔による高密度化" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1488.2069510703245" type="double"/>
-      <Option name="component_pos_y" value="617.3669814245563" type="double"/>
+      <Option name="component_pos_x" value="1119.2069510703245" type="double"/>
+      <Option name="component_pos_y" value="536.3669814245563" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies" type="List">
         <Option type="Map">
@@ -465,8 +667,57 @@
         </Option>
         <Option name="INTERVAL" type="List">
           <Option type="Map">
-            <Option name="expression" value="CASE WHEN @dist &lt;> 0 THEN @dist&#xd;&#xa;ELSE&#xd;&#xa;to_string(&#xd;&#xa; with_variable( 'dx',@ラインcrs1px_OUTPUT_maxx-@ラインcrs1px_OUTPUT_minx,&#xd;&#xa; with_variable( 'dy',@ラインcrs1px_OUTPUT_maxy-@ラインcrs1px_OUTPUT_miny,&#xd;&#xa;&#x9;min(@dx,@dy) &#xd;&#xa; ))&#xd;&#xa;)&#xd;&#xa;END " type="QString"/>
+            <Option name="expression" value="to_string(&#xd;&#xa; with_variable( 'dx',@ラインcrs1px_OUTPUT_maxx-@ラインcrs1px_OUTPUT_minx,&#xd;&#xa; with_variable( 'dy',@ラインcrs1px_OUTPUT_maxy-@ラインcrs1px_OUTPUT_miny,&#xd;&#xa;&#x9;min(@dx,@dy) &#xd;&#xa; ))&#xd;&#xa;)" type="QString"/>
             <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:dissolve_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:dissolve" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1644" type="double"/>
+        <Option name="component_pos_y" value="438" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="融合（dissolve）格子で分割したラインの融合" type="QString"/>
+      <Option name="component_height" value="31.000000000000004" type="double"/>
+      <Option name="component_pos_x" value="1485" type="double"/>
+      <Option name="component_pos_y" value="495.5" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:dissolve_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="StringList">
+              <Option value="LINE_ID" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:splitwithlines_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SEPARATE_DISJOINT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
           </Option>
         </Option>
       </Option>
@@ -521,16 +772,16 @@
         <Option name="color" value="" type="QString"/>
         <Option name="component_description" value="ラスタのCRSのセルサイズ取得&#xa;pixels to polygon　の出力を１つだけ抽出することにより変数でセルサイズを取得できる。" type="QString"/>
         <Option name="component_height" value="79.5" type="double"/>
-        <Option name="component_pos_x" value="728.5" type="double"/>
-        <Option name="component_pos_y" value="689.25" type="double"/>
+        <Option name="component_pos_x" value="729.5" type="double"/>
+        <Option name="component_pos_y" value="584.25" type="double"/>
         <Option name="component_width" value="100" type="double"/>
         <Option name="outputs_collapsed" value="true" type="bool"/>
         <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option name="component_description" value="式による抽出1px" type="QString"/>
+      <Option name="component_description" value="d1" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="517" type="double"/>
-      <Option name="component_pos_y" value="680.5" type="double"/>
+      <Option name="component_pos_x" value="548" type="double"/>
+      <Option name="component_pos_y" value="575.5" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:extractbyexpression_2" type="QString"/>
@@ -562,16 +813,16 @@
         <Option name="color" value="" type="QString"/>
         <Option name="component_description" value="入力のDEMを付加して値があるところだけを残す。&#xa;後のラスタの処理によって増えた範囲は使用しない" type="QString"/>
         <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1766.12594390507" type="double"/>
-        <Option name="component_pos_y" value="1009.7170981661275" type="double"/>
+        <Option name="component_pos_x" value="1032.12594390507" type="double"/>
+        <Option name="component_pos_y" value="1271.7170981661275" type="double"/>
         <Option name="component_width" value="100" type="double"/>
         <Option name="outputs_collapsed" value="true" type="bool"/>
         <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
       <Option name="component_description" value="QGIS式による抽出 SAMPLE0_1 is not null" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1470" type="double"/>
-      <Option name="component_pos_y" value="940.25" type="double"/>
+      <Option name="component_pos_x" value="685" type="double"/>
+      <Option name="component_pos_y" value="1311.25" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:extractbyexpression_3" type="QString"/>
@@ -611,8 +862,8 @@
       </Option>
       <Option name="component_description" value="頂点の抽出" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1490.1219631049462" type="double"/>
-      <Option name="component_pos_y" value="687.4807073800987" type="double"/>
+      <Option name="component_pos_x" value="1126.1219631049462" type="double"/>
+      <Option name="component_pos_y" value="591.4807073800987" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:extractvertices_1" type="QString"/>
@@ -623,6 +874,41 @@
         <Option name="INPUT" type="List">
           <Option type="Map">
             <Option name="child_id" value="native:densifygeometriesgivenaninterval_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractvertices_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractvertices" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1654" type="double"/>
+        <Option name="component_pos_y" value="507" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="頂点を抽出ラインと格子の交差点pt" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1486" type="double"/>
+      <Option name="component_pos_y" value="553" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:extractvertices_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:dissolve_1" type="QString"/>
             <Option name="output_name" value="OUTPUT" type="QString"/>
             <Option name="source" value="1" type="int"/>
           </Option>
@@ -646,8 +932,8 @@
       </Option>
       <Option name="component_description" value="フィールド計算機LINE_ID" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1490.788629771613" type="double"/>
-      <Option name="component_pos_y" value="547.4807073800987" type="double"/>
+      <Option name="component_pos_x" value="1116.788629771613" type="double"/>
+      <Option name="component_pos_y" value="481.4807073800987" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:fieldcalculator_1" type="QString"/>
@@ -711,8 +997,8 @@
       </Option>
       <Option name="component_description" value="フィールド計算機Point_ID" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1519.1219631049462" type="double"/>
-      <Option name="component_pos_y" value="738.0640407134322" type="double"/>
+      <Option name="component_pos_x" value="1486.1219631049462" type="double"/>
+      <Option name="component_pos_y" value="635.0640407134322" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:fieldcalculator_2" type="QString"/>
@@ -752,7 +1038,7 @@
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="native:extractvertices_1" type="QString"/>
+            <Option name="child_id" value="native:extractvertices_2" type="QString"/>
             <Option name="output_name" value="OUTPUT" type="QString"/>
             <Option name="source" value="1" type="int"/>
           </Option>
@@ -1019,6 +1305,65 @@
         </Option>
       </Option>
     </Option>
+    <Option name="native:geometrybyexpression_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:geometrybyexpression" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1318" type="double"/>
+        <Option name="component_pos_y" value="874" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="式によるジオメトリ格子" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1139" type="double"/>
+      <Option name="component_pos_y" value="944" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:geometrybyexpression_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="EXPRESSION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="with_variable('gm',&#xd;&#xa;CASE WHEN @lattice = 1 THEN &#xd;&#xa; collect_geometries( &#xd;&#xa;  make_line(  make_point( -0.5,0),make_point( 0.5,0)),&#xd;&#xa;  make_line(  make_point( 0,-0.5),make_point( 0,0.5)),&#xd;&#xa;  make_line(  make_point( -0.5,-0.5),make_point( 0.5,0.5)),&#xd;&#xa;  make_line(  make_point( -0.5,0.5),make_point( 0.5,-0.5))&#xd;&#xa; )&#xd;&#xa;ELSE&#xd;&#xa; collect_geometries( &#xd;&#xa;  make_line(  make_point( -0.5,0),make_point( 0.5,0)),&#xd;&#xa;  make_line(  make_point( 0,-0.5),make_point( 0,0.5))&#xd;&#xa; )&#xd;&#xa;END,&#xd;&#xa;with_variable('cg',centroid(  $geometry ),&#xd;&#xa;affine_transform(&#xd;&#xa; @gm,&#xd;&#xa; x(@cg),y(@cg),&#xd;&#xa;0,&#xd;&#xa;@d1_OUTPUT_maxx - @d1_OUTPUT_minx,&#xd;&#xa;@d1_OUTPUT_maxy - @d1_OUTPUT_miny&#xd;&#xa;)))" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:pixelstopolygons_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OUTPUT_GEOMETRY" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="WITH_M" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="WITH_Z" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:joinattributestable_1" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
@@ -1117,8 +1462,8 @@
       </Option>
       <Option name="component_description" value="属性テーブルで結合（table join）" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="826" type="double"/>
-      <Option name="component_pos_y" value="1660.5" type="double"/>
+      <Option name="component_pos_x" value="697" type="double"/>
+      <Option name="component_pos_y" value="1664.5" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:joinattributestable_2" type="QString"/>
@@ -1277,8 +1622,8 @@
       </Option>
       <Option name="component_description" value="マルチパートをシングルパートに変換" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1505.7886297716127" type="double"/>
-      <Option name="component_pos_y" value="485.4807073800987" type="double"/>
+      <Option name="component_pos_x" value="1113.7886297716127" type="double"/>
+      <Option name="component_pos_y" value="439.4807073800987" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:multiparttosingleparts_1" type="QString"/>
@@ -1373,6 +1718,53 @@
         </Option>
       </Option>
     </Option>
+    <Option name="native:pixelstopolygons_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:pixelstopolygons" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1373" type="double"/>
+        <Option name="component_pos_y" value="803" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="ラスタをベクタ化（pixels to polygons）ライン沿い" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1149" type="double"/>
+      <Option name="component_pos_y" value="875" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:pixelstopolygons_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="VALUE" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_RASTER" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="gdal:cliprasterbymasklayer_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RASTER_BAND" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:pixelstopolygons_2" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
@@ -1390,8 +1782,8 @@
       </Option>
       <Option name="component_description" value="ラスタのベクタ化（pixels to polygons）" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="550.371089536138" type="double"/>
-      <Option name="component_pos_y" value="594.5641855447681" type="double"/>
+      <Option name="component_pos_x" value="552.371089536138" type="double"/>
+      <Option name="component_pos_y" value="508.56418554476807" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:pixelstopolygons_2" type="QString"/>
@@ -1437,8 +1829,8 @@
       </Option>
       <Option name="component_description" value="ベクタレイヤにラスタ値を付加SAMPLE0_1" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1469.5" type="double"/>
-      <Option name="component_pos_y" value="876.75" type="double"/>
+      <Option name="component_pos_x" value="675.5" type="double"/>
+      <Option name="component_pos_y" value="1236.75" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:rastersampling_2" type="QString"/>
@@ -1484,8 +1876,8 @@
       </Option>
       <Option name="component_description" value="属性をリファクタリングpnt_valを整数に" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="807.5" type="double"/>
-      <Option name="component_pos_y" value="1594" type="double"/>
+      <Option name="component_pos_x" value="686.5" type="double"/>
+      <Option name="component_pos_y" value="1595" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:refactorfields_1" type="QString"/>
@@ -1646,6 +2038,59 @@
         </Option>
       </Option>
     </Option>
+    <Option name="native:reprojectlayer_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:reprojectlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1301" type="double"/>
+        <Option name="component_pos_y" value="665" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="ベクタレイヤを再投影　ライン沿いバッファをdemcrsに投影" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1130" type="double"/>
+      <Option name="component_pos_y" value="724" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:reprojectlayer_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CONVERT_CURVED_GEOMETRIES" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:buffer_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OPERATION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="DEM" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:reprojectlayer_2" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
@@ -1663,8 +2108,8 @@
       </Option>
       <Option name="component_description" value="ベクタレイヤを再投影　ベクタcrs→ラスタcrs" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1490.8299960404875" type="double"/>
-      <Option name="component_pos_y" value="801.2795239036527" type="double"/>
+      <Option name="component_pos_x" value="1483.8299960404875" type="double"/>
+      <Option name="component_pos_y" value="722.2795239036527" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:reprojectlayer_2" type="QString"/>
@@ -1699,6 +2144,59 @@
         </Option>
       </Option>
     </Option>
+    <Option name="native:reprojectlayer_3" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:reprojectlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1330" type="double"/>
+        <Option name="component_pos_y" value="940" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="ベクタレイヤを再投影　格子をラインecrsに" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1126" type="double"/>
+      <Option name="component_pos_y" value="997" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:reprojectlayer_3" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CONVERT_CURVED_GEOMETRIES" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:geometrybyexpression_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OPERATION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="ProfileLine" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:reprojectlayer_5" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
@@ -1716,8 +2214,8 @@
       </Option>
       <Option name="component_description" value="ベクタレイヤを再投影　ラスタ付加頂点 ラスタcrs→ベクタcrs" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="762.6666666666667" type="double"/>
-      <Option name="component_pos_y" value="1514.3333333333335" type="double"/>
+      <Option name="component_pos_x" value="692.6666666666667" type="double"/>
+      <Option name="component_pos_y" value="1518.3333333333335" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:reprojectlayer_5" type="QString"/>
@@ -1761,16 +2259,16 @@
         <Option name="color" value="171,221,164,255" type="QString"/>
         <Option name="component_description" value="ラインcrsのセルサイズ取得&#xa;ラスタcrs→ラインcrs" type="QString"/>
         <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="819" type="double"/>
-        <Option name="component_pos_y" value="844.5" type="double"/>
+        <Option name="component_pos_x" value="737" type="double"/>
+        <Option name="component_pos_y" value="700.5" type="double"/>
         <Option name="component_width" value="100" type="double"/>
         <Option name="outputs_collapsed" value="true" type="bool"/>
         <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
       <Option name="component_description" value="ラインcrs1px" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="617.5" type="double"/>
-      <Option name="component_pos_y" value="774" type="double"/>
+      <Option name="component_pos_x" value="559.5" type="double"/>
+      <Option name="component_pos_y" value="645" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:reprojectlayer_6" type="QString"/>
@@ -1852,14 +2350,82 @@
         </Option>
       </Option>
     </Option>
+    <Option name="native:splitwithlines_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:splitwithlines" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="1680" type="double"/>
+        <Option name="component_pos_y" value="389" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="線で分割（split with lines）" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="1480" type="double"/>
+      <Option name="component_pos_y" value="434" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:splitwithlines_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:fieldcalculator_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="LINES" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:reprojectlayer_3" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option name="DEM" value="ras_wgs84_addnodata_8b1a6a46_6acf_4169_b196_b55831c3d651" type="QString"/>
+    <Option name="DEM" value="FG_GML_5032_65_DEM5Awgs84_3b6527d0_9570_46a8_bb73_c95cec2c8933" type="QString"/>
     <Option name="ProfileLine" value="line_256496b3_f4fd_4e4b_95a5_2e61e8c3daed" type="QString"/>
-    <Option name="native:orderbyexpression_1:profile_resample" type="QgsProcessingOutputLayerDefinition">
+    <Option name="lattice" value="1" type="int"/>
+    <Option name="method" value="1" type="int"/>
+    <Option name="native:geometrybyexpression_1:式によるジオメトリ格子" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="System" type="QString"/>
+          <Option name="fileEncoding" value="Shift_JIS" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:orderbyexpression_1:profile_vsample" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="Shift_JIS" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" value="true" type="bool"/>
+          <Option name="type" value="1" type="int"/>
+          <Option name="val" value="TEMPORARY_OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:pixelstopolygons_1:ラスタをベクタ化（pixels to polygons）ライン沿い" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" value="Shift_JIS" type="QString"/>
         </Option>
         <Option name="sink" type="Map">
           <Option name="active" value="true" type="bool"/>
@@ -1871,11 +2437,11 @@
   </Option>
   <Option name="groupBoxes" type="List">
     <Option type="Map">
-      <Option name="color" value="255,248,169,255" type="QString"/>
+      <Option name="color" value="166,206,227,255" type="QString"/>
       <Option name="component_description" value="DEMの処理" type="QString"/>
       <Option name="component_height" value="177.63806196180138" type="double"/>
-      <Option name="component_pos_x" value="722.446854917407" type="double"/>
-      <Option name="component_pos_y" value="1124.3354267707205" type="double"/>
+      <Option name="component_pos_x" value="665.446854917407" type="double"/>
+      <Option name="component_pos_y" value="1002.3354267707205" type="double"/>
       <Option name="component_width" value="429.94066882416405" type="double"/>
       <Option name="outputs_collapsed" value="true" type="bool"/>
       <Option name="parameters_collapsed" value="true" type="bool"/>
@@ -1884,10 +2450,10 @@
     <Option type="Map">
       <Option name="color" value="6,230,92,255" type="QString"/>
       <Option name="component_description" value="DEMのセルサイズの取得" type="QString"/>
-      <Option name="component_height" value="524.3779399642738" type="double"/>
-      <Option name="component_pos_x" value="648.2820876289543" type="double"/>
-      <Option name="component_pos_y" value="638.0477094578225" type="double"/>
-      <Option name="component_width" value="543.7605424878152" type="double"/>
+      <Option name="component_height" value="365.37793996427376" type="double"/>
+      <Option name="component_pos_x" value="608.2820876289543" type="double"/>
+      <Option name="component_pos_y" value="569.5477094578225" type="double"/>
+      <Option name="component_width" value="395.7605424878152" type="double"/>
       <Option name="outputs_collapsed" value="true" type="bool"/>
       <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="uuid" value="{2a48664c-806e-47af-903c-89c122dc0a39}" type="QString"/>
@@ -1915,6 +2481,17 @@
       <Option name="uuid" value="{82b6aa7d-0f4a-4fb7-a492-35cc1cf1dc94}" type="QString"/>
     </Option>
     <Option type="Map">
+      <Option name="color" value="15,245,245,255" type="QString"/>
+      <Option name="component_description" value="格子の作成" type="QString"/>
+      <Option name="component_height" value="642.6091613052075" type="double"/>
+      <Option name="component_pos_x" value="1094.9703344120821" type="double"/>
+      <Option name="component_pos_y" value="701.3045806526038" type="double"/>
+      <Option name="component_width" value="343.94066882416405" type="double"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="uuid" value="{b468d1f7-9762-426c-bd2f-fadf46271897}" type="QString"/>
+    </Option>
+    <Option type="Map">
       <Option name="color" value="51,160,44,255" type="QString"/>
       <Option name="component_description" value="後処理、sagaのprofile from linesの出力フィールド名っぽくする" type="QString"/>
       <Option name="component_height" value="742" type="double"/>
@@ -1928,9 +2505,9 @@
     <Option type="Map">
       <Option name="color" value="251,154,153,255" type="QString"/>
       <Option name="component_description" value="ラスタ値を付加" type="QString"/>
-      <Option name="component_height" value="418.63806196180144" type="double"/>
+      <Option name="component_height" value="572.6380619618014" type="double"/>
       <Option name="component_pos_x" value="715.4703344120821" type="double"/>
-      <Option name="component_pos_y" value="1497.8190309809006" type="double"/>
+      <Option name="component_pos_y" value="1420.8190309809006" type="double"/>
       <Option name="component_width" value="429.94066882416405" type="double"/>
       <Option name="outputs_collapsed" value="true" type="bool"/>
       <Option name="parameters_collapsed" value="true" type="bool"/>
@@ -1940,7 +2517,7 @@
   <Option name="help" type="Map">
     <Option name="" value="" type="QString"/>
     <Option name="ALG_CREATOR" value="mooya" type="QString"/>
-    <Option name="ALG_DESC" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'MS UI Gothic'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>投影変換を伴う断面作成２&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>測線ラインを均等分割して頂点を作成し、DEMから内挿補完で値を取得する&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>地理院DEM(地理座標）、測線（投影座標）の組み合わせで、DEMを投影変換せずに断面を作成できる。同一CRSでも使用可能。&lt;/p>&lt;/body>&lt;/html>" type="QString"/>
+    <Option name="ALG_DESC" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'MS UI Gothic'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>投影変換を伴う断面作成１&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>DEMから作成した格子と断面ラインの交点に頂点を作成し、DEMから内挿補完により値を取得する。&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>地理院DEM(地理座標）、測線（投影座標）の組み合わせで、DEMを投影変換せずに断面を作成できる。同一CRSでも使用可能。&lt;/p>&lt;/body>&lt;/html>" type="QString"/>
     <Option name="ALG_HELP_CREATOR" value="" type="QString"/>
     <Option name="ALG_VERSION" value="2023/1/24 初版&#xa;2023/2/6 DIST_SURF追加&#xa;2023/5/19 ラスタとラインベクタのcrsが違う場合に対応、nodataとの境界を滑らかに&#xa;2023/8/27 Z値を設定、散布図を削除（標高断面図での使用を想定）&#xa;" type="QString"/>
     <Option name="BufferSize" value="断面ラインからのバッファ距離でセルサイズ以上を指定する。&#xa;作成されたバッファ（ポリゴン）から、ポイントを作成する格子を作成する。&#xa;" type="QString"/>
@@ -1952,6 +2529,7 @@
     <Option name="SamplingMethod" value="ラスター値のサンプル方法&#xa;bicubic,bilineaはnodata値近傍がnullになる。&#xa;「bicubic→bilinear→nearest」は、サンプル方法を変えてnullを埋める。" type="QString"/>
     <Option name="dist" value="頂点間隔の最大値。&#xa;間隔による高密度化のパラメータ。ポリラインのCRSの単位で指定する。&#xa;既定値は0で、この場合はDEMのセルサイズをラインのCRSに変換したものが使用される。" type="QString"/>
     <Option name="divnum" value="ラスタの分割数。&#xa;奇数であれば元のラスタの値が変更されないため、奇数を推奨ex3,5,7・・・" type="QString"/>
+    <Option name="lattice" value="断面図を作成する頂点のパラメータ&#xa;＋：ラスタのセルの重心を基準に作成した＋字のラインと測線ラインの交点&#xa;＋×：ラスタのセルの重心を基準に作成した＋字・対角のラインと測線ラインの交点" type="QString"/>
     <Option name="method" value="内挿補間の方法" type="QString"/>
     <Option name="native:addxyfields_1:profile_grass" value="" type="QString"/>
     <Option name="native:fieldcalculator_11:profile_grass" value="断面データ" type="QString"/>
@@ -1970,7 +2548,7 @@
     <Option name="div1" value="30" type="QString"/>
   </Option>
   <Option name="model_group" value="Raster" type="QString"/>
-  <Option name="model_name" value="profile_grass_v_sample2" type="QString"/>
+  <Option name="model_name" value="profile_grass_v_sample1" type="QString"/>
   <Option name="outputGroup" value="" type="QString"/>
   <Option name="outputOrder"/>
   <Option name="parameterDefinitions" type="Map">
@@ -1997,18 +2575,23 @@
       <Option name="name" value="ProfileLine" type="QString"/>
       <Option name="parameter_type" value="vector" type="QString"/>
     </Option>
-    <Option name="dist" type="Map">
-      <Option name="data_type" value="1" type="int"/>
-      <Option name="default" value="0" type="double"/>
+    <Option name="lattice" type="Map">
+      <Option name="allow_multiple" value="false" type="bool"/>
+      <Option name="default" type="List">
+        <Option value="0" type="int"/>
+      </Option>
       <Option name="defaultGui" type="invalid"/>
-      <Option name="description" value="Dist" type="QString"/>
+      <Option name="description" value="Lattice" type="QString"/>
       <Option name="flags" value="2" type="int"/>
-      <Option name="help" value="頂点間隔の最大値。&#xa;間隔による高密度化のパラメータ。ポリラインのCRSの単位で指定する。&#xa;既定値は0で、この場合はDEMのセルサイズをラインのCRSに変換したものが使用される。" type="QString"/>
-      <Option name="max" value="1e+06" type="double"/>
+      <Option name="help" value="断面図を作成する頂点のパラメータ&#xa;＋：ラスタのセルの重心を基準に作成した＋字のラインと断面図のラインの交点&#xa;＋×：ラスタのセルの重心を基準に作成した＋字・対角のラインと断面図のラインの交点" type="QString"/>
       <Option name="metadata"/>
-      <Option name="min" value="0" type="double"/>
-      <Option name="name" value="dist" type="QString"/>
-      <Option name="parameter_type" value="number" type="QString"/>
+      <Option name="name" value="lattice" type="QString"/>
+      <Option name="options" type="StringList">
+        <Option value="＋" type="QString"/>
+        <Option value="＋×" type="QString"/>
+      </Option>
+      <Option name="parameter_type" value="enum" type="QString"/>
+      <Option name="uses_static_strings" value="false" type="bool"/>
     </Option>
     <Option name="method" type="Map">
       <Option name="allow_multiple" value="false" type="bool"/>
@@ -2096,24 +2679,24 @@
       <Option name="outputs_collapsed" value="true" type="bool"/>
       <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
-    <Option name="dist" type="Map">
+    <Option name="lattice" type="Map">
       <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
         <Option name="color" value="" type="QString"/>
         <Option name="component_description" value="" type="QString"/>
         <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="1767" type="double"/>
-        <Option name="component_pos_y" value="243" type="double"/>
+        <Option name="component_pos_x" value="562" type="double"/>
+        <Option name="component_pos_y" value="758" type="double"/>
         <Option name="component_width" value="100" type="double"/>
         <Option name="outputs_collapsed" value="true" type="bool"/>
         <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option name="component_description" value="dist" type="QString"/>
+      <Option name="component_description" value="lattice" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="1570" type="double"/>
-      <Option name="component_pos_y" value="322" type="double"/>
+      <Option name="component_pos_x" value="801" type="double"/>
+      <Option name="component_pos_y" value="854" type="double"/>
       <Option name="component_width" value="200" type="double"/>
-      <Option name="name" value="dist" type="QString"/>
+      <Option name="name" value="lattice" type="QString"/>
       <Option name="outputs_collapsed" value="true" type="bool"/>
       <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
@@ -2123,16 +2706,16 @@
         <Option name="color" value="" type="QString"/>
         <Option name="component_description" value="" type="QString"/>
         <Option name="component_height" value="60" type="double"/>
-        <Option name="component_pos_x" value="492" type="double"/>
-        <Option name="component_pos_y" value="1230" type="double"/>
+        <Option name="component_pos_x" value="586" type="double"/>
+        <Option name="component_pos_y" value="1232" type="double"/>
         <Option name="component_width" value="100" type="double"/>
         <Option name="outputs_collapsed" value="true" type="bool"/>
         <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
       <Option name="component_description" value="method" type="QString"/>
       <Option name="component_height" value="30" type="double"/>
-      <Option name="component_pos_x" value="292" type="double"/>
-      <Option name="component_pos_y" value="1275" type="double"/>
+      <Option name="component_pos_x" value="386" type="double"/>
+      <Option name="component_pos_y" value="1277" type="double"/>
       <Option name="component_width" value="200" type="double"/>
       <Option name="name" value="method" type="QString"/>
       <Option name="outputs_collapsed" value="true" type="bool"/>
