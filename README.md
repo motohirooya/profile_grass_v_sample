@@ -10,7 +10,6 @@
 
 ## profile_grass_v_sample1.model3 
 - 無印を踏襲してDEMから作成した格子と断面ラインの交点に頂点を作成
-- 格子を＋字、＋字と対角から選択できるように
 
 ## profile_grass_v_sample2.model3 
 - 測線ラインを均等分割して頂点を作成
