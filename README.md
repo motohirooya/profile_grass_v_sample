@@ -3,10 +3,11 @@
 - https://qiita.com/mooya/items/22d97535048fb1860778
 
 # 同1と2 
-- QGISでgrassが利用できるようになったので作り直した https://github.com/qgis/QGIS/pull/49226
+- QGISでgrassが利用できるようになったので作り直した
 - DEMとpolylineのCRSが異なる場合でも断面図を作成可能に
 - Z値を設定→標高断面図で表示可能に。散布図の出力を削除
 - 斜距離（DISR_SURF）の属性を追加
+- https://qiita.com/mooya/private/a4c84d4c9f9a0b8d8579
 
 ## profile_grass_v_sample1.model3 
 - 無印を踏襲してDEMから作成した格子と断面ラインの交点に頂点を作成
