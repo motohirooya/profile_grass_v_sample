@@ -242,8 +242,9 @@
         </Option>
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option type="QString" value="DEM" name="parameter_name"/>
-            <Option type="int" value="0" name="source"/>
+            <Option type="QString" value="gdal:cliprasterbymasklayer_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
         <Option type="List" name="ITERATIONS">
@@ -415,7 +416,7 @@
         <Option type="List" name="GROUP_FIELDS">
           <Option type="Map">
             <Option type="int" value="2" name="source"/>
-            <Option type="StringList" name="static_value">
+            <Option type="List" name="static_value">
               <Option type="QString" value="LINE_ID"/>
             </Option>
           </Option>
@@ -540,7 +541,7 @@
         </Option>
         <Option type="List" name="DISTANCE">
           <Option type="Map">
-            <Option type="QString" value=" @ラインcrs1px_OUTPUT_maxx - @ラインcrs1px_OUTPUT_minx " name="expression"/>
+            <Option type="QString" value="( @ラインcrs1px_OUTPUT_maxx - @ラインcrs1px_OUTPUT_minx ) *  @buffer_size " name="expression"/>
             <Option type="int" value="3" name="source"/>
           </Option>
         </Option>
@@ -612,7 +613,7 @@
         <Option type="List" name="COLUMN">
           <Option type="Map">
             <Option type="int" value="2" name="source"/>
-            <Option type="StringList" name="static_value">
+            <Option type="List" name="static_value">
               <Option type="QString" value="LINE_ID2"/>
               <Option type="QString" value="fid"/>
             </Option>
@@ -702,7 +703,7 @@
         <Option type="List" name="FIELD">
           <Option type="Map">
             <Option type="int" value="2" name="source"/>
-            <Option type="StringList" name="static_value">
+            <Option type="List" name="static_value">
               <Option type="QString" value="LINE_ID"/>
             </Option>
           </Option>
@@ -1293,7 +1294,7 @@
         <Option type="List" name="FORMULA">
           <Option type="Map">
             <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="with_variable('AUTO',&quot;AUTO&quot;,&#xd;&#xa; array_sum( array_agg( &quot;DIST_SURF1&quot;,group_by:=  &quot;LINE_ID&quot; ,filter:= &quot;AUTO&quot; &lt;= @AUTO)  )) &#xd;&#xa;" name="static_value"/>
+            <Option type="QString" value="/*&#xd;&#xa; 斜距離の計算&#xd;&#xa;*/&#xd;&#xa;CASE WHEN  @calculate_dist_surf THEN &#xd;&#xa;with_variable('AUTO',&quot;AUTO&quot;,&#xd;&#xa; array_sum( array_agg( &quot;DIST_SURF1&quot;,group_by:=  &quot;LINE_ID&quot; ,filter:= &quot;AUTO&quot; &lt;= @AUTO)  )) &#xd;&#xa;ELSE null&#xd;&#xa;END" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT">
@@ -1405,7 +1406,7 @@
         <Option type="List" name="FIELDS_TO_COPY">
           <Option type="Map">
             <Option type="int" value="2" name="source"/>
-            <Option type="StringList" name="static_value">
+            <Option type="List" name="static_value">
               <Option type="QString" value="Z"/>
               <Option type="QString" value="distance"/>
             </Option>
@@ -1486,7 +1487,7 @@
         <Option type="List" name="FIELDS_TO_COPY">
           <Option type="Map">
             <Option type="int" value="2" name="source"/>
-            <Option type="StringList" name="static_value">
+            <Option type="List" name="static_value">
               <Option type="QString" value=""/>
             </Option>
           </Option>
@@ -1566,7 +1567,7 @@
         <Option type="List" name="FIELDS_TO_COPY">
           <Option type="Map">
             <Option type="int" value="2" name="source"/>
-            <Option type="StringList" name="static_value">
+            <Option type="List" name="static_value">
               <Option type="QString" value=""/>
             </Option>
           </Option>
@@ -2519,7 +2520,7 @@
     <Option type="QString" value="mooya" name="ALG_CREATOR"/>
     <Option type="QString" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'MS UI Gothic'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>断面作成１(ポリラインとラスター格子の交点にポイントを作成)&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>DEMから作成した格子と断面ラインの交点に頂点を作成し、DEMから内挿補完により値を取得する。&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>地理院DEM(地理座標）、測線（投影座標）の組み合わせで、DEMを投影変換せずに断面を作成できる。同一CRSでも使用可能。&lt;/p>&lt;/body>&lt;/html>" name="ALG_DESC"/>
     <Option type="QString" value="" name="ALG_HELP_CREATOR"/>
-    <Option type="QString" value="2021/12/6 Qiita FOSS4G Advent Calendar 2021&#xa;2023/12/6 Qiita FOSS4G Advent Calendar 2023" name="ALG_VERSION"/>
+    <Option type="QString" value="2021/12/6 Qiita FOSS4G Advent Calendar 2021&#xa;2023/12/6 Qiita FOSS4G Advent Calendar 2023&#xa;2023/12/24 斜距離（DIST SURF)の計算を選択オプションにした。" name="ALG_VERSION"/>
     <Option type="QString" value="断面ラインからのバッファ距離でセルサイズ以上を指定する。&#xa;作成されたバッファ（ポリゴン）から、ポイントを作成する格子を作成する。&#xa;" name="BufferSize"/>
     <Option type="QString" value="標高DEM" name="DEM"/>
     <Option type="QString" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'MS UI Gothic'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" name="EXAMPLES"/>
@@ -2527,6 +2528,7 @@
     <Option type="QString" value="断面図を作成する測線Polyline" name="ProfileLine"/>
     <Option type="QString" value="" name="SHORT_DESCRIPTION"/>
     <Option type="QString" value="ラスター値のサンプル方法&#xa;bicubic,bilineaはnodata値近傍がnullになる。&#xa;「bicubic→bilinear→nearest」は、サンプル方法を変えてnullを埋める。" name="SamplingMethod"/>
+    <Option type="QString" value="斜距離を計算するか選択" name="calculate_dist_surf"/>
     <Option type="QString" value="頂点間隔の最大値。&#xa;間隔による高密度化のパラメータ。ポリラインのCRSの単位で指定する。&#xa;既定値は0で、この場合はDEMのセルサイズをラインのCRSに変換したものが使用される。" name="dist"/>
     <Option type="QString" value="ラスタの分割数。&#xa;奇数であれば元のラスタの値が変更されないため、奇数を推奨ex3,5,7・・・" name="divnum"/>
     <Option type="QString" value="断面図を作成する頂点のパラメータ&#xa;＋：ラスタのセルの重心を基準に作成した＋字のラインと測線ラインの交点&#xa;＋×：ラスタのセルの重心を基準に作成した＋字・対角のラインと測線ラインの交点" name="lattice"/>
@@ -2575,6 +2577,16 @@
       <Option type="QString" value="ProfileLine" name="name"/>
       <Option type="QString" value="vector" name="parameter_type"/>
     </Option>
+    <Option type="Map" name="calculate_dist_surf">
+      <Option type="bool" value="false" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="Calculate DIST SURF" name="description"/>
+      <Option type="int" value="2" name="flags"/>
+      <Option type="QString" value="斜距離を計算するか選択" name="help"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="calculate_dist_surf" name="name"/>
+      <Option type="QString" value="boolean" name="parameter_type"/>
+    </Option>
     <Option type="Map" name="method">
       <Option type="bool" value="false" name="allow_multiple"/>
       <Option type="List" name="default">
@@ -2616,7 +2628,8 @@
   <Option type="StringList" name="parameterOrder">
     <Option type="QString" value="DEM"/>
     <Option type="QString" value="ProfileLine"/>
-    <Option type="QString" value="BufferSize"/>
+    <Option type="QString" value="method"/>
+    <Option type="QString" value="calculate_dist_surf"/>
   </Option>
   <Option type="Map" name="parameters">
     <Option type="Map" name="DEM">
@@ -2658,6 +2671,27 @@
       <Option type="double" value="297.4023516293538" name="component_pos_y"/>
       <Option type="double" value="200" name="component_width"/>
       <Option type="QString" value="ProfileLine" name="name"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="calculate_dist_surf">
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="603" name="component_pos_x"/>
+        <Option type="double" value="1811" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="calculate_dist_surf" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="402" name="component_pos_x"/>
+      <Option type="double" value="2183" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="QString" value="calculate_dist_surf" name="name"/>
       <Option type="bool" value="true" name="outputs_collapsed"/>
       <Option type="bool" value="true" name="parameters_collapsed"/>
     </Option>
